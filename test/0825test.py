@@ -52,5 +52,28 @@ def test3():
         if count==0:
             print(x)
 
+
+
+def test4():
+    a1='123'
+    a2="466"
+    a3=""""""
+    print(a1,a2,a3)
+
+def test5():
+    fruits = ['orange', 'grape', 'pitaya', 'blueberry']
+    for index, a in enumerate(fruits):
+        print(index, ':', a)
+
+def test6():
+    keys = ['1001', '1002', '1003']
+    values = ['骆昊', '王大锤', '白元芳']
+    d = dict(zip(keys, values))
+    print(d)
+
+
+
+
+
 if __name__ == '__main__':
-    test3()
+    test6()
