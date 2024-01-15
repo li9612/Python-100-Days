@@ -1,37 +1,12 @@
-import toolTest
-
-def test6():
-    keys = ['1001', '1002', '1003']
-    values = ['骆昊', '王大锤', '白元芳']
-    d = dict(zip(keys, values))
-    print(d)
+import random
 
 
-    toolTest.bar()
+list1= ['北京','香港','qwe','asd','zxc']
+a=random.sample(list1,2)
 
-
-def gcd(x, y):
-    # (x, y) = (y, x) if x > y else (x, y)
-    for factor in range(x, 0, -1):
-        if x % factor == 0 and y % factor == 0:
-            return factor
-
-
-if __name__ == '__main__':
-    print(gcd(18,15))
-
-
-
-import sys
-
-
-
-# list1= ['北京','香港','qwe','asd','zxc']
-# a=random.sample(list1,2)
-#
-# b=random.sample(list1,1)
-# print(a)
-# print(b)
+b=random.sample(list1,1)
+print(a)
+print(b)
 
 # def roll_dice(n=2):
 #         """摇色子"""
