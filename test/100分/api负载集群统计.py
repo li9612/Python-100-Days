@@ -17,7 +17,8 @@ for x in range(num):
     c=b
     list1.append(c)
     dep = 0
-    for y in range(len(list1)):
+    l_list1=len(list1)
+    for y in range(l_list1+1):
         k=list1[x][y]+str(dep)
         if k in dic:
             dic[k]=dic[k]+1
@@ -36,16 +37,6 @@ a1=int(list_a[0])-1
 a2=list_a[1]+str(a1)
 if a2 in  dic:
 
-    print(dic.get(a2))
+    print(dic.get(a2)+1)
 else:
     print(0)
-
-
-
-
-
-
-
-
-
-
