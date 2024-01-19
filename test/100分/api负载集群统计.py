@@ -23,7 +23,7 @@ for x in range(num):
         if k in dic:
             dic[k]=dic[k]+1
         else:
-            dic[k]=0
+            dic[k]=1
         dep=dep+1
 # print(list1)
 print(dic)
@@ -37,6 +37,6 @@ a1=int(list_a[0])-1
 a2=list_a[1]+str(a1)
 if a2 in  dic:
 
-    print(dic.get(a2)+1)
+    print(dic.get(a2))
 else:
     print(0)
