@@ -5,7 +5,7 @@ x=0
 dic = {}
 list_s={}
 
-dic1 ={"asd":1}
+# dic1 ={"asd":1}
 
 
 #按照/拆分字符串，去掉无用元素
@@ -13,12 +13,14 @@ for x in range(num):
 
     a=input()
     b=a.split("/")
+
+    # print(b)
     b.pop(0)
     c=b
     list1.append(c)
     dep = 0
     l_list1=len(list1)
-    for y in range(l_list1+1):
+    for y in range(l_list1):
         k=list1[x][y]+str(dep)
         if k in dic:
             dic[k]=dic[k]+1
@@ -40,3 +42,5 @@ if a2 in  dic:
     print(dic.get(a2))
 else:
     print(0)
+
+

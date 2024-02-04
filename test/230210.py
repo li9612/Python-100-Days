@@ -1,12 +1,19 @@
 import random
 
 
-list1= ['北京','香港','qwe','asd','zxc']
-a=random.sample(list1,2)
+a, b = 5, 10
+print('{0} * {1} = {2}'.format(a, b, a * b))
 
-b=random.sample(list1,1)
-print(a)
-print(b)
+
+a, b = 6, 10
+print(f'{a} * {b} = {a * b}')
+
+# list1= ['北京','香港','qwe','asd','zxc']
+# a=random.sample(list1,2)
+#
+# b=random.sample(list1,1)
+# print(a)
+# print(b)
 
 # def roll_dice(n=2):
 #         """摇色子"""
@@ -33,3 +40,17 @@ print(b)
 
 # if __name__ =="__main__":
 #     add()
+
+
+# m = int(input('m = '))
+# n = int(input('n = '))
+# fm = 1
+# for num in range(1, m + 1):
+#     fm *= num
+# fn = 1
+# for num in range(1, n + 1):
+#     fn *= num
+# fm_n = 1
+# for num in range(1, m - n + 1):
+#     fm_n *= num
+# print(fm // fn // fm_n)
